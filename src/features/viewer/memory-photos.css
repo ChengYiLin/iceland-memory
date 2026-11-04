@@ -1,0 +1,216 @@
+.memory-photo-set {
+  --photo-height: min(42dvh, 400px);
+}
+@media (min-width: 768px) {
+  .memory-album.has-day-photos {
+    height: min(94dvh, 940px);
+  }
+}
+.album-photo-controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+.album-photo-controls > button {
+  min-height: 44px;
+  padding: 8px 14px;
+  border: 0;
+  border-radius: 4px;
+  background: #e8eddf;
+  font-size: 14px;
+}
+.album-photo-count {
+  flex: 1;
+  text-align: center;
+  margin: 0;
+  font-variant-numeric: tabular-nums;
+}
+.album-photo-count strong,
+.album-photo-count span {
+  display: block;
+}
+.album-photo-count strong {
+  font-size: 16px;
+  font-weight: 500;
+}
+.album-photo-count span {
+  font-size: 12px;
+  color: var(--muted);
+  margin-top: 2px;
+}
+.album-track {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
+  touch-action: auto;
+  cursor: grab;
+}
+.album-track::-webkit-scrollbar,
+.album-thumbnails::-webkit-scrollbar {
+  display: none;
+}
+.album-track.is-dragging {
+  scroll-snap-type: none;
+  cursor: grabbing;
+}
+.album-track figure {
+  flex: 0 0 100%;
+  min-width: 0;
+  margin: 0;
+  scroll-snap-align: center;
+}
+.album-photo-frame {
+  height: var(--photo-height);
+  background: #e9e9df;
+}
+.album-track img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+  user-select: none;
+}
+.album-track img[hidden] {
+  display: none;
+}
+.album-track figcaption {
+  padding: 8px 0;
+  font-size: 13px;
+  color: var(--ink);
+  line-height: 1.6;
+  overflow-wrap: anywhere;
+}
+.failed-photo {
+  display: none;
+}
+.image-failed .failed-photo {
+  display: grid;
+  align-content: center;
+  height: 100%;
+  padding: 24px;
+  text-align: center;
+  font-size: 14px;
+}
+.album-thumbnails {
+  position: relative;
+  display: flex;
+  gap: 8px;
+  overflow-x: auto;
+  overscroll-behavior-x: contain;
+  scrollbar-width: none;
+  margin: 12px 0 20px;
+  padding: 4px;
+  list-style: none;
+}
+.album-thumbnails li {
+  flex: 0 0 auto;
+}
+.album-thumbnails button {
+  position: relative;
+  display: block;
+  width: 68px;
+  height: 56px;
+  padding: 0;
+  border: 2px solid transparent;
+  border-radius: 4px;
+  background: #e8eddf;
+  overflow: hidden;
+}
+.album-thumbnails button[aria-pressed='true'] {
+  border-color: var(--green);
+}
+.album-thumbnails img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.album-thumbnails span {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  padding: 2px 5px;
+  background: var(--paper);
+  color: var(--ink);
+  font-size: 12px;
+  line-height: 1.3;
+}
+.album-memory-navigation {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  flex-shrink: 0;
+  margin: 0;
+  padding: 12px 28px 16px;
+  background: var(--paper);
+}
+.album-memory-navigation button {
+  min-width: 0;
+  min-height: 64px;
+  padding: 12px;
+  border: 0;
+  border-radius: 4px;
+  background: #e8eddf;
+  text-align: left;
+}
+.album-memory-navigation small,
+.album-memory-navigation strong {
+  display: block;
+}
+.album-memory-navigation small {
+  font-size: 12px;
+  margin-bottom: 4px;
+}
+.album-memory-navigation strong {
+  overflow: hidden;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.5;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.album-memory-navigation button:last-child {
+  background: var(--green);
+  color: var(--paper);
+}
+.album-photo-controls button:not(:disabled):hover,
+.album-memory-navigation button:not(:disabled):first-child:hover {
+  background: #dce5d5;
+}
+.album-memory-navigation button:last-child:hover {
+  background: #34614d;
+}
+@media (max-width: 767px) {
+  .memory-photo-set {
+    --photo-height: clamp(160px, 32dvh, 300px);
+  }
+  .album-photo-controls {
+    gap: 8px;
+  }
+  .album-photo-controls > button {
+    padding: 8px 10px;
+  }
+  .album-thumbnails button {
+    width: 60px;
+    height: 48px;
+  }
+  .album-memory-navigation {
+    gap: 8px;
+    padding: 12px 16px 16px;
+  }
+}
+@media (max-width: 767px) and (max-height: 650px) {
+  .album-memory-navigation button {
+    min-height: 44px;
+    padding: 10px;
+  }
+  .album-memory-navigation strong {
+    display: none;
+  }
+  .album-memory-navigation small {
+    margin: 0;
+  }
+}

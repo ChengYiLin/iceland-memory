@@ -1,0 +1,18 @@
+ts	phase	decision	why	evidence	result
+2026-11-04	scope	只調操作，不換配色與字體，不抽新設計方向	品牌與版面前幾輪已定案；實際走查的問題都在操作，不在外觀	.taste-skill/menu-hierarchy/critique.md	decided
+2026-11-04	scope	以「沒有照片也要順利回顧」為主軸	103 段回憶目前 0 張照片，以照片為前提的操作都失效	public/journey.json	measured
+2026-11-04	map	標記平時顯示編號與地名	空白方塊無法辨識，名稱只在 hover 出現，手機完全看不到	.taste-skill/operation-flow/before/screens	decided
+2026-11-04	map	刪除手機預覽卡，點標記直接開啟	預覽卡的用途是補上看不到的名稱；名稱常駐後這一步只剩多點一次	src/features/viewer/JourneyCanvas.vue	decided
+2026-11-04	album	移除讀故事開關，故事直接顯示	102/103 段故事只有一句，開關展開的是預告已顯示的同一句	public/journey.json	measured
+2026-11-04	intro	摘要與標題相同時隱藏，改為資料判斷	18/18 天的摘要只是標題換標點；判斷式讓日後真正的摘要自動出現	public/journey.json	measured
+2026-11-04	process	不跑 architect 與 arena	沒有新型別或跨模組介面，只有一個純函式模組與樣板調整，平行設計沒有可比較的形狀	.scratch/operation-flow/spec.md	skip
+2026-11-04	process	不下載 Playwright 瀏覽器，改用系統 Chrome	先前輪次已用同作法；避免未經同意的下載	.taste-skill/navigation/playwright.config.mjs	decided
+2026-11-04	process	不跑 how，直接讀程式	改動集中在 viewer 四個檔案，沒有跨子系統的問題要回答	src/features/viewer	skip
+2026-11-04	map	放不下或離實際位置太遠的標記退回只顯示編號	真實點擊發現 320 寬度標記互相遮擋而點不到；修正前總覽 17 處重疊	.taste-skill/operation-flow/after/metrics.json	measured
+2026-11-04	review	320 只顯示編號的標記不再壓縮	空間確實不足；編號與清單一致，地名保留在可及名稱，已寫入規格	.scratch/operation-flow/spec.md	accepted
+2026-11-04	review	總覽文案維持不變	那是進入頁的介紹，不是這輪要移除的狀態文字	src/features/viewer/MemoryViewer.vue	accepted
+2026-11-04	album	切換按鈕的回憶名稱改單行省略	多行標題讓手機按鈕從 66px 長到 87px，違反按鈕不動；完整名稱保留在可及名稱	e2e/viewer-photos.spec.ts	measured
+2026-11-04	verify	設計檢查使用 --app 模式	這是操作中的畫面，前兩輪也是 0 FAIL、1 WARN；頁面模式的 5 FAIL 屬行銷頁規則，但未與修正前比對	.taste-skill/operation-flow/inspect/report.json	decided
+2026-11-04	content	不改寫內容文字	63 段故事以回憶名稱開頭、9 個標題被截斷、29 個標題以句號結尾；這些是作者的文字，交由使用者決定	public/journey.json	deferred
+2026-11-05	map	標記寬度改為 min(260px, 64vw)，移除手機 148px 上限	走查 18 天發現 390 寬度 65 個標記有 23 個地名被省略號切掉，原量測只算有沒有顯示；放寬後桌機與 390 為 0 個，320 為 2 個，重疊仍為 0	.taste-skill/operation-flow/content-cleanup/walk	measured
+2026-11-05	verify	量測的可讀標記改為必須沒有被截斷	舊定義把被切掉的地名也算可讀，高估了結果	.taste-skill/operation-flow/measure.mjs	decided
