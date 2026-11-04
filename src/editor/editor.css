@@ -1,0 +1,330 @@
+@import '../styles/main.css';
+:root {
+  --editor-line: #dddcd1;
+  --editor-paper: #f9f7f0;
+}
+body {
+  margin: 0;
+  background: var(--editor-paper);
+  color: #283c32;
+}
+button,
+a,
+input,
+textarea,
+select {
+  font: inherit;
+}
+button,
+a {
+  touch-action: manipulation;
+}
+button {
+  cursor: pointer;
+}
+button:disabled {
+  opacity: 0.45;
+  cursor: default;
+}
+input,
+textarea,
+select {
+  width: 100%;
+  border: 1px solid #c9cec2;
+  border-radius: 7px;
+  padding: 11px;
+  background: #fffef9;
+  color: #263c30;
+  box-sizing: border-box;
+}
+label {
+  display: grid;
+  gap: 8px;
+  font-size: 13px;
+  font-weight: 600;
+}
+button,
+.secondary {
+  border: 1px solid #b9c4b7;
+  border-radius: 7px;
+  padding: 10px 16px;
+  background: transparent;
+  color: #284d3a;
+  text-decoration: none;
+}
+.primary,
+.upload-button {
+  background: #28513e;
+  color: #fff;
+  border: 0;
+  border-radius: 7px;
+  padding: 12px 18px;
+}
+.eyebrow {
+  font-size: 10px;
+  letter-spacing: 0.18em;
+}
+.editor-header {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  padding: 20px 32px;
+  border-bottom: 1px solid var(--editor-line);
+}
+.editor-header a {
+  font-size: 12px;
+  letter-spacing: 0.14em;
+  color: inherit;
+  text-decoration: none;
+}
+.editor-header small {
+  margin-left: auto;
+  color: #6f786d;
+}
+.editor-sidebar {
+  position: fixed;
+  top: 70px;
+  bottom: 0;
+  width: 300px;
+  padding: 28px 24px;
+  overflow: auto;
+  border-right: 1px solid var(--editor-line);
+}
+.editor-sidebar h1 {
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 1.45;
+  margin: 16px 0;
+}
+.editor-hint {
+  font-size: 12px;
+  color: #727a6c;
+  line-height: 1.8;
+}
+.editor-sidebar nav {
+  display: grid;
+  gap: 5px;
+  margin-top: 20px;
+}
+.editor-sidebar nav button {
+  display: flex;
+  gap: 12px;
+  text-align: left;
+  padding: 12px 8px;
+  border: 0;
+  border-radius: 6px;
+  font-size: 13px;
+  line-height: 1.6;
+}
+.editor-sidebar nav button.active {
+  background: #e3e8dc;
+}
+.editor-sidebar nav small {
+  display: block;
+  color: #73806e;
+  font-size: 10px;
+}
+.editor-main {
+  margin-left: 350px;
+  max-width: 1050px;
+  padding: 26px 40px 80px;
+}
+.editor-toolbar {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  border-bottom: 1px solid var(--editor-line);
+  padding-bottom: 16px;
+  margin-bottom: 26px;
+}
+.editor-toolbar p {
+  font-size: 13px;
+}
+.editor-toolbar strong {
+  margin-left: 14px;
+  letter-spacing: 0.1em;
+}
+.editor-toolbar > span {
+  margin-left: auto;
+  font-size: 11px;
+  color: #68725e;
+}
+.editor-fields {
+  display: grid;
+  gap: 20px;
+}
+.location-fields {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+.editor-photos {
+  margin-top: 38px;
+}
+.section-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+.section-heading h2 {
+  font-size: 23px;
+  font-weight: 500;
+  margin-top: 8px;
+}
+.section-heading h2 small {
+  font-size: 13px;
+}
+.upload-button {
+  cursor: pointer;
+  font-size: 13px;
+}
+.upload-button input {
+  display: none;
+}
+.photo-empty {
+  border: 1px dashed #bdc8b7;
+  text-align: center;
+  padding: 48px 20px;
+  color: #6e7a65;
+  line-height: 2;
+  font-size: 16px;
+}
+.photo-empty small {
+  font-size: 12px;
+}
+.photo-grid {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+  gap: 20px;
+}
+.photo-grid li {
+  position: relative;
+  border: 1px solid var(--editor-line);
+  border-radius: 9px;
+  background: #fffdf7;
+  overflow: hidden;
+  padding-bottom: 12px;
+}
+.photo-grid img {
+  width: 100%;
+  height: 190px;
+  object-fit: contain;
+  background: #e9e9df;
+}
+.photo-grid label {
+  margin: 12px;
+  font-size: 11px;
+}
+.photo-badge {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  padding: 4px 9px;
+  background: #fffdf0e8;
+  border-radius: 4px;
+  font-size: 10px;
+}
+.photo-actions {
+  display: flex;
+  gap: 4px;
+  flex-wrap: wrap;
+  margin: 12px;
+}
+.photo-actions button {
+  padding: 7px;
+  font-size: 11px;
+}
+.export-panel {
+  border-top: 1px solid var(--editor-line);
+  margin-top: 32px;
+  padding-top: 26px;
+}
+.export-panel h2 {
+  font-weight: 500;
+  font-size: 24px;
+}
+.export-panel p {
+  font-size: 13px;
+  color: #6c7866;
+}
+.export-panel > div {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  align-items: center;
+  font-size: 12px;
+}
+.export-panel a {
+  color: inherit;
+}
+.editor-message {
+  padding: 16px;
+  background: #e6ecde;
+  border-radius: 7px;
+  white-space: pre-line;
+  line-height: 1.7;
+}
+.editor-errors {
+  background: #f6e8df;
+  color: #8a4030;
+  padding: 16px 32px;
+  line-height: 1.8;
+}
+details {
+  margin-top: 20px;
+  font-size: 12px;
+  line-height: 1.8;
+}
+summary {
+  cursor: pointer;
+}
+.editor-loading {
+  padding: 60px;
+}
+button:focus-visible,
+a:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible {
+  outline: 3px solid #b17b43;
+  outline-offset: 3px;
+}
+@media (max-width: 850px) {
+  .editor-sidebar {
+    position: relative;
+    top: 0;
+    width: auto;
+    border-right: 0;
+  }
+  .editor-sidebar nav {
+    max-height: 230px;
+    overflow: auto;
+  }
+  .editor-main {
+    margin-left: 0;
+    padding: 20px;
+  }
+  .editor-header {
+    padding: 18px;
+    gap: 12px;
+    font-size: 12px;
+  }
+  .editor-header small {
+    display: none;
+  }
+  .location-fields {
+    grid-template-columns: 1fr;
+  }
+  .editor-toolbar {
+    gap: 8px;
+  }
+  .editor-toolbar > span {
+    font-size: 10px;
+  }
+  .editor-toolbar button {
+    padding: 10px;
+  }
+}

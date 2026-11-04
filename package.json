@@ -1,0 +1,60 @@
+{
+  "name": "iceland-memory",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "prototype": "vite --host 127.0.0.1 --port 5180 --strictPort --open /?variant=A",
+    "build": "run-p type-check \"build-only {@}\" --",
+    "preview": "vite preview",
+    "perf:map": "node scripts/audit-map.mjs",
+    "test:unit": "vitest",
+    "test:e2e": "playwright test",
+    "build-only": "vite build",
+    "type-check": "vue-tsc --build",
+    "lint": "npm run lint:check",
+    "lint:fix": "oxlint . --fix && eslint . --fix",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "check": "npm run type-check && npm run lint:check && npm run test:unit -- --run && npm run format:check",
+    "lint:check": "oxlint . && eslint .",
+    "editor": "node scripts/editor.mjs",
+    "test:editor": "node --test scripts/tests/*.test.mjs",
+    "export:site": "node scripts/export.mjs"
+  },
+  "dependencies": {
+    "maplibre-gl": "^6.15.0",
+    "vue": "^3.5.44"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.63.0",
+    "@tsconfig/node22": "^22.0.5",
+    "@types/jsdom": "^30.0.0",
+    "@types/node": "^22.0.0",
+    "@vitejs/plugin-vue": "^6.0.8",
+    "@vitest/eslint-plugin": "^1.6.27",
+    "@vue/eslint-config-typescript": "^14.9.0",
+    "@vue/test-utils": "^2.5.0",
+    "@vue/tsconfig": "^0.9.1",
+    "eslint": "^10.10.0",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-oxlint": "~1.82.0",
+    "eslint-plugin-playwright": "^2.12.0",
+    "eslint-plugin-vue": "~10.11.0",
+    "jiti": "^2.7.0",
+    "jsdom": "^30.0.1",
+    "npm-run-all2": "^9.0.3",
+    "oxlint": "~1.82.0",
+    "prettier": "3.9.6",
+    "sharp": "^0.35.5",
+    "typescript": "~6.0.0",
+    "vite": "^8.2.2",
+    "vitest": "^5.0.5",
+    "vue-eslint-parser": "^10.4.1",
+    "vue-tsc": "^3.3.11"
+  },
+  "engines": {
+    "node": "^22.23.2 || ^24.15.0 || >=26.0.0"
+  }
+}

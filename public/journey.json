@@ -1,0 +1,1346 @@
+{
+  "schemaVersion": 1,
+  "title": "冰島，沿途的我們",
+  "totalDays": 18,
+  "regions": [
+    {
+      "id": "reykjavik",
+      "title": "雷克雅維克",
+      "anchor": [-21.94, 64.15]
+    },
+    {
+      "id": "snaefellsnes",
+      "title": "斯奈山半島",
+      "anchor": [-23.2, 64.85]
+    },
+    {
+      "id": "northwest",
+      "title": "西北部",
+      "anchor": [-20.3, 65.55]
+    },
+    {
+      "id": "akureyri",
+      "title": "阿庫雷里",
+      "anchor": [-18.09, 65.68]
+    },
+    {
+      "id": "myvatn",
+      "title": "米湖與北部",
+      "anchor": [-16.99, 65.62]
+    },
+    {
+      "id": "east",
+      "title": "東部峽灣",
+      "anchor": [-14.2, 65.05]
+    },
+    {
+      "id": "southeast",
+      "title": "東南岸",
+      "anchor": [-15.5, 64.2]
+    },
+    {
+      "id": "south",
+      "title": "南岸",
+      "anchor": [-19.1, 63.55]
+    },
+    {
+      "id": "golden",
+      "title": "黃金圈",
+      "anchor": [-20.5, 64.3]
+    }
+  ],
+  "days": [
+    {
+      "id": "day-01",
+      "number": 1,
+      "date": "2026/09/23",
+      "title": "出發與跨國轉機",
+      "summary": "出發與跨國轉機",
+      "regionIds": [],
+      "notes": [],
+      "memories": [
+        {
+          "id": "day-01-memory-01",
+          "title": "桃園經香港飛赫爾辛基",
+          "locationName": "航程與返家",
+          "coordinate": null,
+          "locationStatus": "flight",
+          "story": "航程：臺灣桃園國際機場（TPE）→ 香港國際機場（HKG）轉機 → 赫爾辛基萬塔機場（HEL）跨夜轉機。",
+          "remarks": "",
+          "photos": []
+        }
+      ]
+    },
+    {
+      "id": "day-02",
+      "number": 2,
+      "date": "2026/09/24",
+      "title": "抵達冰島・雷克雅維克市區漫步",
+      "summary": "抵達冰島，雷克雅維克市區漫步",
+      "regionIds": ["reykjavik"],
+      "notes": [],
+      "memories": [
+        {
+          "id": "day-02-memory-01",
+          "title": "抵達凱夫拉維克機場（KEF）",
+          "locationName": "凱夫拉維克機場（KEF）",
+          "coordinate": [-22.6281862, 63.9814869],
+          "locationStatus": "confirmed",
+          "story": "抵達凱夫拉維克機場（KEF）。",
+          "remarks": "",
+          "photos": [],
+          "coordinateSource": "https://maps.app.goo.gl/Wqih9Sw9MCkNF5xX8"
+        },
+        {
+          "id": "day-02-memory-02",
+          "title": "先吃當地冰淇淋店",
+          "locationName": "Ísbúðin litla Valdís",
+          "coordinate": [-21.9255345, 64.1446917],
+          "locationStatus": "confirmed",
+          "story": "先吃當地冰淇淋店。",
+          "remarks": "",
+          "photos": [],
+          "coordinateSource": "https://maps.app.goo.gl/42QUGD3EYgpSGcHy5"
+        },
+        {
+          "id": "day-02-memory-03",
+          "title": "哈爾格林姆教堂（Hallgrímskirkja）",
+          "locationName": "哈爾格林姆教堂（Hallgrímskirkja）",
+          "coordinate": [-21.9267103, 64.1417951],
+          "locationStatus": "confirmed",
+          "story": "哈爾格林姆教堂（Hallgrímskirkja）。",
+          "remarks": "",
+          "photos": [],
+          "coordinateSource": "https://www.openstreetmap.org/relation/6184378"
+        },
+        {
+          "id": "day-02-memory-04",
+          "title": "冰島熱狗 Bæjarins Beztu Pylsur",
+          "locationName": "冰島熱狗 Bæjarins Beztu Pylsur。",
+          "coordinate": null,
+          "locationStatus": "pending",
+          "story": "冰島熱狗 Bæjarins Beztu Pylsur。",
+          "remarks": "",
+          "photos": []
+        },
+        {
+          "id": "day-02-memory-05",
+          "title": "Harpa 音樂廳",
+          "locationName": "Harpa 音樂廳（哈帕音樂廳）",
+          "coordinate": [-21.9322804, 64.1502464],
+          "locationStatus": "confirmed",
+          "story": "Harpa 音樂廳。",
+          "remarks": "",
+          "photos": [],
+          "coordinateSource": "https://maps.app.goo.gl/vJecWfA7tTCTczUX6"
+        },
+        {
+          "id": "day-02-memory-06",
+          "title": "太陽航海者（The Sun Voyager）",
+          "locationName": "太陽航海者（The Sun Voyager）",
+          "coordinate": [-21.9222615, 64.147607],
+          "locationStatus": "confirmed",
+          "story": "沿海濱走向太陽航海者（The Sun Voyager）鋼骨維京船雕塑。",
+          "remarks": "",
+          "photos": [],
+          "coordinateSource": "https://www.openstreetmap.org/node/295480918"
+        }
+      ]
+    },
+    {
+      "id": "day-03",
+      "number": 3,
+      "date": "2026/09/25",
+      "title": "斯奈山半島南岸・維京守護神",
+      "summary": "斯奈山半島南岸，維京守護神",
+      "regionIds": ["snaefellsnes"],
+      "notes": [],
+      "memories": [
+        {
+          "id": "day-03-memory-01",
+          "title": "Dirty Burger（Grillhúsið）",
+          "locationName": "Dirty Burger And Ribs",
+          "coordinate": [-21.908728, 64.5436153],
+          "locationStatus": "confirmed",
+          "story": "午餐：博爾加內斯 Dirty Burger（Grillhúsið）漢堡。",
+          "remarks": "",
+          "photos": [],
+          "coordinateSource": "https://maps.app.goo.gl/2efeE6AFW3H7CBhK6"
+        },
+        {
+          "id": "day-03-memory-02",
+          "title": "Ytri Tunga 海豹沙灘",
+          "locationName": "Ytri Tunga 海豹沙灘",
+          "coordinate": [-23.0803177, 64.8027417],
+          "locationStatus": "confirmed",
+          "story": "在礁石區尋找野生海豹。",
+          "remarks": "",
+          "photos": [],
+          "coordinateSource": "https://maps.app.goo.gl/6CcL3Y5qcf6b7zWx7"
+        },
+        {
+          "id": "day-03-memory-03",
+          "title": "黑教堂（Búðakirkja）",
+          "locationName": "黑教堂（Búðakirkja）",
+          "coordinate": [-23.3840222, 64.821663],
+          "locationStatus": "confirmed",
+          "story": "黑木教堂與荒原攝影。",
+          "remarks": "",
+          "photos": [],
+          "coordinateSource": "https://www.openstreetmap.org/way/289737040"
+        },
+        {
+          "id": "day-03-memory-04",
+          "title": "瓦汀舍利爾洞穴（Vatnshellir Cave）",
+          "locationName": "瓦汀舍利爾洞穴（Vatnshellir Cave）",
+          "coordinate": [-23.8179815, 64.7481231],
+          "locationStatus": "confirmed",
+          "story": "地下熔岩地道探險導覽。",
+          "remarks": "",
+          "photos": [],
+          "coordinateSource": "https://www.openstreetmap.org/node/2384628206"
+        },
+        {
+          "id": "day-03-memory-05",
+          "title": "冰島守護神公園",
+          "locationName": "Bárður Snæfellsás 守護神石像（Arnarstapi）",
+          "coordinate": [-23.6271264, 64.7656497],
+          "locationStatus": "confirmed",
+          "story": "觀看北方守護神巨型石像 Bárður Snæfellsás。",
+          "remarks": "",
+          "photos": [],
+          "coordinateSource": "https://maps.app.goo.gl/ps9Qd9t32YVvt2298"
+        },
+        {
+          "id": "day-03-memory-06",
+          "title": "Hotel Vest Mar",
+          "locationName": "Hotel Vest Mar",
+          "coordinate": [-23.706937, 64.8954128],
+          "locationStatus": "confirmed",
+          "story": "住宿：Hotel Vest Mar。",
+          "remarks": "",
+          "photos": [],
+          "coordinateSource": "https://maps.app.goo.gl/qGzKs4eMMB2ReQaJ7"
+        }
+      ]
+    },
+    {
+      "id": "day-04",
+      "number": 4,
+      "date": "2026/09/26",
+      "title": "斯奈山北岸・遇見小馬・犀牛石",
+      "summary": "斯奈山北岸，遇見小馬，犀牛石",
+      "regionIds": ["snaefellsnes", "northwest"],
+      "notes": [],
+      "memories": [
+        {
+          "id": "day-04-memory-01",
+          "title": "視力眼小紅屋",
+          "locationName": "恩揚德斯霍爾教堂（Ingjaldshóll Church）",
+          "coordinate": [-23.8523638, 64.9078409],
+          "locationStatus": "confirmed",
+          "story": "恩揚德斯霍爾教堂（Ingjaldshóll Church）：紅頂聖禮教堂。",
+          "remarks": "",
+          "photos": [],
+          "coordinateSource": "https://www.openstreetmap.org/way/169835197"
+        },
+        {
+          "id": "day-04-memory-02",
+          "title": "巧遇冰島小馬",
+          "locationName": "路邊草原",
+          "coordinate": [-23.3568645, 64.9375359],
+          "locationStatus": "confirmed",
+          "story": "路邊草原：巧遇冰島小馬，下車撫摸、近距離觀看。",
+          "remarks": "",
+          "photos": [],
+          "coordinateSource": "https://www.google.com/maps/@64.9375359,-23.3568645,13a,75y,247.55h,94.75t/data=!3m10!1e1!3m8!1slRVuq_jYjXHJAwOzgQ3p7g!2e0!6shttps:%2F%2Fstreetviewpixels-pa.clients6.google.com%2Fv1%2Fthumbnail%3Fcb_client%3Dmaps_sv.tactile%26w%3D900%26h%3D600%26pitch%3D-4.749794654540381%26panoid%3DlRVuq_jYjXHJAwOzgQ3p7g%26yaw%3D247.5519945754965!7i16384!8i8192!9m2!1b1!2i34?authuser=0&entry=ttu&g_ep=EgoyMDI2MTAyMC4wIKXMDSoASAFQAw%3D%3D"
+        },
+        {
+          "id": "day-04-memory-03",
+          "title": "教堂山（Kirkjufell）與教堂山瀑布攝影",
+          "locationName": "教堂山（Kirkjufell）與教堂山瀑布",
+          "coordinate": [-23.3069444, 64.9416667],
+          "locationStatus": "confirmed",
+          "story": "教堂山（Kirkjufell）與教堂山瀑布攝影。",
+          "remarks": "",
+          "photos": [],
+          "coordinateSource": "https://maps.app.goo.gl/CF2dkaPcN7LvcK638"
+        },
+        {
+          "id": "day-04-memory-04",
+          "title": "Kolugljúfur 巨人之淚峽谷",
+          "locationName": "Kolugljúfur 巨人之淚峽谷",
+          "coordinate": [-20.5712958, 65.3333817],
+          "locationStatus": "confirmed",
+          "story": "欣賞深邃峽谷急流。",
+          "remarks": "",
+          "photos": [],
+          "coordinateSource": "https://maps.app.goo.gl/CF2dkaPcN7LvcK638"
+        },
+        {
+          "id": "day-04-memory-05",
+          "title": "犀牛石（Hvítserkur）",
+          "locationName": "犀牛石（Hvítserkur）",
+          "coordinate": [-20.6352441, 65.6063761],
+          "locationStatus": "confirmed",
+          "story": "探訪海中玄武巨岩。",
+          "remarks": "",
+          "photos": [],
+          "coordinateSource": "https://maps.app.goo.gl/CF2dkaPcN7LvcK638"
+        },
+        {
+          "id": "day-04-memory-06",
+          "title": "Laxás Cottage",
+          "locationName": "Laxás Cottage（Blönduós）",
+          "coordinate": [-20.2986914, 65.6200923],
+          "locationStatus": "confirmed",
+          "story": "住宿：布倫迪歐斯（Blönduós）的 Laxás Cottage。",
+          "remarks": "",
+          "photos": [],
+          "coordinateSource": "https://maps.app.goo.gl/1AFK4bDEPeD91CCbA"
+        }
+      ]
+    },
+    {
+      "id": "day-05",
+      "number": 5,
+      "date": "2026/09/27",
+      "title": "牧場綿羊・草皮屋・騎馬與翡翠小鎮",
+      "summary": "牧場綿羊，草皮屋，騎馬與翡翠小鎮",
+      "regionIds": ["northwest", "akureyri"],
+      "notes": [],
+      "memories": [
+        {
+          "id": "day-05-memory-01",
+          "title": "住宿周圍發現成群綿羊",
+          "locationName": "Laxás Cottage 周邊",
+          "coordinate": [-20.2986914, 65.6200923],
+          "locationStatus": "confirmed",
+          "story": "早晨：住宿周圍發現成群綿羊。",
+          "remarks": "",
+          "photos": [],
+          "coordinateSource": "https://maps.app.goo.gl/1AFK4bDEPeD91CCbA"
+        },
+        {
+          "id": "day-05-memory-03",
+          "title": "Glaumbær 草原草皮屋博物館",
+          "locationName": "Glaumbær Turf Farm & Museum",
+          "coordinate": [-19.5043888, 65.6103973],
+          "locationStatus": "confirmed",
+          "story": "走入傳統草皮頂矮屋。",
+          "remarks": "",
+          "photos": [],
+          "coordinateSource": "https://maps.app.goo.gl/fhRnwgGp31cMwF89A"
+        },
+        {
+          "id": "day-05-memory-04",
+          "title": "Hestasport 馬場",
+          "locationName": "Hestasport 馬場",
+          "coordinate": [-19.4390034, 65.5456096],
+          "locationStatus": "confirmed",
+          "story": "換裝，在冰島荒原體驗騎乘冰島小馬。",
+          "remarks": "",
+          "photos": [],
+          "coordinateSource": "https://maps.app.goo.gl/ayrGwLxndjrJ11Gg8"
+        },
+        {
+          "id": "day-05-memory-05",
+          "title": "霍夫索斯藍色教堂",
+          "locationName": "Hofsóskirkja",
+          "coordinate": [-19.4073277, 65.8958723],
+          "locationStatus": "confirmed",
+          "story": "造訪 Hofsós 的藍色教堂。",
+          "remarks": "",
+          "photos": [],
+          "coordinateSource": "https://maps.app.goo.gl/CF2dkaPcN7LvcK638"
+        },
+        {
+          "id": "day-05-memory-07",
+          "title": "錫格呂菲厄澤（Siglufjörður，翡翠小鎮）",
+          "locationName": "Herring Café（Siglufjörður）",
+          "coordinate": [-18.9136382, 66.1476101],
+          "locationStatus": "confirmed",
+          "story": "於 Herring 餐廳享用鯡魚排／魚料理。",
+          "remarks": "",
+          "photos": [],
+          "coordinateSource": "https://maps.app.goo.gl/ufHF2r7DCLtV91pV6"
+        },
+        {
+          "id": "day-05-memory-08",
+          "title": "亞庫來利",
+          "locationName": "亞庫來利（Akureyri）",
+          "coordinate": [-18.0906859, 65.6825509],
+          "locationStatus": "confirmed",
+          "story": "住宿：開車抵達亞庫來利，入住 Acco Luxury Apartments。",
+          "remarks": "",
+          "photos": [],
+          "coordinateSource": "https://maps.app.goo.gl/iNjLgfZ919HLfhZz7"
+        }
+      ]
+    },
+    {
+      "id": "day-06",
+      "number": 6,
+      "date": "2026/09/28",
+      "title": "森林溫泉・眾神瀑布・看牛吃牛與初見極光",
+      "summary": "森林溫泉，眾神瀑布，看牛吃牛與初見極光",
+      "regionIds": ["akureyri", "myvatn"],
+      "notes": [],
+      "memories": [
+        {
+          "id": "day-06-memory-01",
+          "title": "Forest Lagoon",
+          "locationName": "Forest Lagoon（森林溫泉）",
+          "coordinate": [-18.0420694, 65.6700871],
+          "locationStatus": "confirmed",
+          "story": "早晨：前往亞庫來利峽灣邊的森林溫泉（Forest Lagoon）泡湯。",
+          "remarks": "",
+          "photos": [],
+          "coordinateSource": "https://maps.app.goo.gl/bm3gWaUV4TnFoTnv9"
+        },
+        {
+          "id": "day-06-memory-02",
+          "title": "眾神瀑布（Goðafoss）",
+          "locationName": "眾神瀑布（Goðafoss）",
+          "coordinate": [-17.550624, 65.6828162],
+          "locationStatus": "confirmed",
+          "story": "觀賞弧形瀑布。",
+          "remarks": "",
+          "photos": [],
+          "coordinateSource": "https://www.openstreetmap.org/node/5227736663"
+        },
+        {
+          "id": "day-06-memory-04",
+          "title": "Skútustaðagígar 偽火山口群",
+          "locationName": "Skútustaðagígar 偽火山口群",
+          "coordinate": [-17.033733, 65.5713765],
+          "locationStatus": "confirmed",
+          "story": "環湖步道漫步，觀察湖畔羊群。",
+          "remarks": "",
+          "photos": [],
+          "coordinateSource": "https://www.openstreetmap.org/way/411196971"
+        },
+        {
+          "id": "day-06-memory-05",
+          "title": "Vogafjós 農場牛棚餐廳",
+          "locationName": "Vogafjós",
+          "coordinate": [-16.9225384, 65.6241026],
+          "locationStatus": "confirmed",
+          "story": "晚餐：看牛吃牛的農場牛棚景觀餐廳 Vogafjós Farm Resort。",
+          "remarks": "",
+          "photos": [],
+          "coordinateSource": "https://www.openstreetmap.org/node/6462407896"
+        },
+        {
+          "id": "day-06-memory-06",
+          "title": "Mývatn apartments",
+          "locationName": "Mývatn apartments",
+          "coordinate": [-16.8960741, 65.6207036],
+          "locationStatus": "confirmed",
+          "story": "住宿：Mývatn apartments。",
+          "remarks": "",
+          "photos": [],
+          "coordinateSource": "https://maps.app.goo.gl/bsbfPwEXcsadb6Kd9"
+        }
+      ]
+    },
+    {
+      "id": "day-07",
+      "number": 7,
+      "date": "2026/09/29",
+      "title": "好友大集合・馬蹄峽谷・米湖溫泉",
+      "summary": "好友大集合，馬蹄峽谷，米湖溫泉",
+      "regionIds": ["myvatn"],
+      "notes": [],
+      "memories": [
+        {
+          "id": "day-07-memory-02",
+          "title": "黛提瀑布（Dettifoss）",
+          "locationName": "黛提瀑布（Dettifoss）",
+          "coordinate": [-16.3844911, 65.8143509],
+          "locationStatus": "confirmed",
+          "story": "感受磅礴水勢。",
+          "remarks": "",
+          "photos": [],
+          "coordinateSource": "https://www.openstreetmap.org/node/571990614"
+        },
+        {
+          "id": "day-07-memory-03",
+          "title": "公路休息站",
+          "locationName": "黛提瀑布與馬蹄峽谷間（暫估中點）",
+          "coordinate": [-16.4483589, 65.9079697],
+          "locationStatus": "confirmed",
+          "story": "途中停留，大家拿出畫具畫畫留念。",
+          "remarks": "",
+          "photos": []
+        },
+        {
+          "id": "day-07-memory-04",
+          "title": "阿斯匹吉峽谷（Ásbyrgi，馬蹄峽谷）",
+          "locationName": "阿斯匹吉峽谷（Ásbyrgi，馬蹄峽谷）",
+          "coordinate": [-16.5122266, 66.0015884],
+          "locationStatus": "confirmed",
+          "story": "徒步漫步馬蹄形斷崖森林。",
+          "remarks": "",
+          "photos": [],
+          "coordinateSource": "https://www.openstreetmap.org/node/1397755121"
+        },
+        {
+          "id": "day-07-memory-05",
+          "title": "胡薩維克（Húsavík，賞鯨小鎮）",
+          "locationName": "Húsavík Wooden Church（胡薩維克木造教堂）",
+          "coordinate": [-17.3421909, 66.0458796],
+          "locationStatus": "confirmed",
+          "story": "造訪木造教堂，與 Patty 等好友道別。",
+          "remarks": "",
+          "photos": [],
+          "coordinateSource": "https://maps.app.goo.gl/rcHrjAp7F1CXZLKZ7"
+        },
+        {
+          "id": "day-07-memory-06",
+          "title": "米湖天然溫泉（Mývatn Nature Baths）",
+          "locationName": "Jarðböðin við Mývatn",
+          "coordinate": [-16.8475989, 65.6304565],
+          "locationStatus": "confirmed",
+          "story": "夜晚：米湖天然溫泉（Mývatn Nature Baths），泡淡藍色暖湯。",
+          "remarks": "",
+          "photos": [],
+          "coordinateSource": "https://www.openstreetmap.org/way/513972196"
+        },
+        {
+          "id": "day-07-memory-07",
+          "title": "Mývatn apartments",
+          "locationName": "Mývatn apartments",
+          "coordinate": [-16.8960741, 65.6207036],
+          "locationStatus": "confirmed",
+          "story": "住宿：Mývatn apartments。",
+          "remarks": "",
+          "photos": [],
+          "coordinateSource": "https://maps.app.goo.gl/bsbfPwEXcsadb6Kd9"
+        }
+      ]
+    },
+    {
+      "id": "day-08",
+      "number": 8,
+      "date": "2026/09/30",
+      "title": "冰火洞穴・三大地熱區與生氣爬火山",
+      "summary": "冰火洞穴，三大地熱區與生氣爬火山",
+      "regionIds": ["myvatn"],
+      "notes": [],
+      "memories": [
+        {
+          "id": "day-08-memory-01",
+          "title": "格約塔吉亞洞穴（Grjótagjá）",
+          "locationName": "格約塔吉亞洞穴（Grjótagjá）",
+          "coordinate": [-16.8829708, 65.6264141],
+          "locationStatus": "confirmed",
+          "story": "《冰與火之歌》瓊恩雪諾的地洞溫泉取景地。",
+          "remarks": "",
+          "photos": [],
+          "coordinateSource": "https://www.openstreetmap.org/node/270956562"
+        },
+        {
+          "id": "day-08-memory-02",
+          "title": "Víti 火口湖",
+          "locationName": "Víti 火口湖",
+          "coordinate": [-16.7540289, 65.7172158],
+          "locationStatus": "confirmed",
+          "story": "克拉夫拉火山頂的青綠色火口湖。",
+          "remarks": "",
+          "photos": [],
+          "coordinateSource": "https://www.openstreetmap.org/way/113324846"
+        },
+        {
+          "id": "day-08-memory-03",
+          "title": "小臭臭地熱區（Leirhnjúkur 周邊地熱）",
+          "locationName": "小臭臭地熱區（Leirhnjúkur 周邊地熱）",
+          "coordinate": [-16.7842628, 65.7184813],
+          "locationStatus": "confirmed",
+          "story": "沿冒煙的岩漿裂隙地熱行走。",
+          "remarks": "",
+          "photos": [],
+          "coordinateSource": "https://maps.app.goo.gl/yRSq7dB8W6zXT1Cv5"
+        },
+        {
+          "id": "day-08-memory-04",
+          "title": "惠爾山（Hverfjall）",
+          "locationName": "惠爾山（Hverfjall）",
+          "coordinate": [-16.873954, 65.6050606],
+          "locationStatus": "confirmed",
+          "story": "攀登黑色火山碎屑圈火口；發生火爆生氣事件。",
+          "remarks": "",
+          "photos": [],
+          "coordinateSource": "https://www.openstreetmap.org/node/270956581"
+        },
+        {
+          "id": "day-08-memory-05",
+          "title": "黑色城堡（Dimmuborgir）",
+          "locationName": "黑色城堡（Dimmuborgir）",
+          "coordinate": [-16.91228, 65.5912203],
+          "locationStatus": "confirmed",
+          "story": "穿梭黑色奇岩溶岩迷宮。",
+          "remarks": "",
+          "photos": [],
+          "coordinateSource": "https://maps.app.goo.gl/7Uo8oPh3JmQTcJFm7"
+        },
+        {
+          "id": "day-08-memory-06",
+          "title": "Hverir（大臭臭地熱區）",
+          "locationName": "Hverir（大臭臭地熱區）",
+          "coordinate": [-16.809311, 65.6409144],
+          "locationStatus": "confirmed",
+          "story": "硫磺味重、冒泡的橘紅泥漿地熱區。",
+          "remarks": "",
+          "photos": [],
+          "coordinateSource": "https://maps.app.goo.gl/7J5K8Dd4ESRcA1wk6"
+        },
+        {
+          "id": "day-08-memory-07",
+          "title": "Mývatn apartments",
+          "locationName": "Mývatn apartments",
+          "coordinate": [-16.8960741, 65.6207036],
+          "locationStatus": "confirmed",
+          "story": "住宿：Mývatn apartments。",
+          "remarks": "",
+          "photos": [],
+          "coordinateSource": "https://maps.app.goo.gl/bsbfPwEXcsadb6Kd9"
+        }
+      ]
+    },
+    {
+      "id": "day-09",
+      "number": 9,
+      "date": "2026/10/01",
+      "title": "柱狀玄武岩・美式漢堡・紅線健行",
+      "summary": "柱狀玄武岩，美式漢堡，紅線健行",
+      "regionIds": ["east"],
+      "notes": [],
+      "memories": [
+        {
+          "id": "day-09-memory-01",
+          "title": "Stuðlagil Canyon",
+          "locationName": "Stuðlagil Canyon",
+          "coordinate": [-15.3081247, 65.1623267],
+          "locationStatus": "confirmed",
+          "story": "六角柱狀玄武岩峽谷。",
+          "remarks": "",
+          "photos": [],
+          "coordinateSource": "https://www.openstreetmap.org/node/4356487496"
+        },
+        {
+          "id": "day-09-memory-02",
+          "title": "Rjúkandi 瀑布",
+          "locationName": "Rjúkandi 瀑布",
+          "coordinate": [-15.0794796, 65.3335816],
+          "locationStatus": "confirmed",
+          "story": "路邊雙層瀑布，短暫停留拍照。",
+          "remarks": "",
+          "photos": [],
+          "coordinateSource": "https://www.openstreetmap.org/node/2376735338"
+        },
+        {
+          "id": "day-09-memory-03",
+          "title": "埃伊爾斯塔濟的美式漢堡餐廳 OBÓ Diner",
+          "locationName": "午餐",
+          "coordinate": null,
+          "locationStatus": "pending",
+          "story": "午餐：埃伊爾斯塔濟的美式漢堡餐廳 OBÓ Diner。",
+          "remarks": "",
+          "photos": []
+        },
+        {
+          "id": "day-09-memory-04",
+          "title": "Hengifoss（紅線懸崖瀑布）",
+          "locationName": "Hengifoss（紅線懸崖瀑布）",
+          "coordinate": [-14.8895463, 65.095181],
+          "locationStatus": "confirmed",
+          "story": "沿步道徒步近 1 小時，欣賞鑲嵌紅色黏土層的高瀑。",
+          "remarks": "",
+          "photos": [],
+          "coordinateSource": "https://www.openstreetmap.org/node/2571686635"
+        },
+        {
+          "id": "day-09-memory-05",
+          "title": "Skipalaekur Farm Apartments",
+          "locationName": "住宿",
+          "coordinate": null,
+          "locationStatus": "pending",
+          "story": "住宿：Skipalaekur Farm Apartments。",
+          "remarks": "",
+          "photos": []
+        },
+        {
+          "id": "day-09-memory-06",
+          "title": "Becky 第二次生氣事件",
+          "locationName": "回憶事件",
+          "coordinate": null,
+          "locationStatus": "pending",
+          "story": "回憶事件：Becky 第二次生氣事件。",
+          "remarks": "",
+          "photos": []
+        }
+      ]
+    },
+    {
+      "id": "day-10",
+      "number": 10,
+      "date": "2026/10/02",
+      "title": "白日夢冒險王・求婚驚喜・私房瀑布與大極光",
+      "summary": "白日夢冒險王，求婚驚喜，私房瀑布與大極光",
+      "regionIds": ["east"],
+      "notes": [],
+      "memories": [
+        {
+          "id": "day-10-memory-01",
+          "title": "93 號公路隘口",
+          "locationName": "93 號公路隘口",
+          "coordinate": null,
+          "locationStatus": "pending",
+          "story": "《白日夢冒險王》滑板公路。",
+          "remarks": "",
+          "photos": []
+        },
+        {
+          "id": "day-10-memory-02",
+          "title": "Gufufoss 瀑布",
+          "locationName": "Gufufoss 瀑布",
+          "coordinate": [-14.0574988, 65.2399528],
+          "locationStatus": "confirmed",
+          "story": "行經 93 號公路時沿途停靠。",
+          "remarks": "",
+          "photos": [],
+          "coordinateSource": "https://www.openstreetmap.org/node/3101158567"
+        },
+        {
+          "id": "day-10-memory-03",
+          "title": "目睹奧斯卡求婚事件",
+          "locationName": "目睹奧斯卡求婚事件。",
+          "coordinate": null,
+          "locationStatus": "pending",
+          "story": "目睹奧斯卡求婚事件。",
+          "remarks": "",
+          "photos": []
+        },
+        {
+          "id": "day-10-memory-04",
+          "title": "在旁邊的露天彈跳床玩耍跳躍",
+          "locationName": "在旁邊的露天彈跳床玩耍跳躍。",
+          "coordinate": null,
+          "locationStatus": "pending",
+          "story": "在旁邊的露天彈跳床玩耍跳躍。",
+          "remarks": "",
+          "photos": []
+        },
+        {
+          "id": "day-10-memory-05",
+          "title": "漫步 Seyðisfjörður 的彩虹街道",
+          "locationName": "彩虹步道",
+          "coordinate": null,
+          "locationStatus": "pending",
+          "story": "彩虹步道：漫步 Seyðisfjörður 的彩虹街道。",
+          "remarks": "",
+          "photos": []
+        },
+        {
+          "id": "day-10-memory-06",
+          "title": "淡藍色小教堂",
+          "locationName": "淡藍色小教堂",
+          "coordinate": null,
+          "locationStatus": "pending",
+          "story": "造訪 Seyðisfjörður 的教堂。",
+          "remarks": "",
+          "photos": []
+        },
+        {
+          "id": "day-10-memory-07",
+          "title": "私房秘境瀑布",
+          "locationName": "私房秘境瀑布",
+          "coordinate": null,
+          "locationStatus": "pending",
+          "story": "可近距離走到水幕下方，鄰近作家 Gunnar Gunnarsson 紀念館／故居修道院。",
+          "remarks": "",
+          "photos": []
+        },
+        {
+          "id": "day-10-memory-08",
+          "title": "東部峽灣公路",
+          "locationName": "東部峽灣公路",
+          "coordinate": null,
+          "locationStatus": "pending",
+          "story": "穿過雷扎爾菲厄澤與內斯克伊斯塔澤。",
+          "remarks": "",
+          "photos": []
+        },
+        {
+          "id": "day-10-memory-09",
+          "title": "Mjóeyri Travel service 海景小木屋",
+          "locationName": "住宿",
+          "coordinate": null,
+          "locationStatus": "pending",
+          "story": "住宿：Mjóeyri Travel service 海景小木屋。",
+          "remarks": "",
+          "photos": []
+        },
+        {
+          "id": "day-10-memory-10",
+          "title": "第二次極光大爆發",
+          "locationName": "夜晚回憶",
+          "coordinate": null,
+          "locationStatus": "pending",
+          "story": "夜晚回憶：第二次極光大爆發，比上次更大、舞動更劇烈。",
+          "remarks": "",
+          "photos": []
+        }
+      ]
+    },
+    {
+      "id": "day-11",
+      "number": 11,
+      "date": "2026/10/03",
+      "title": "偶遇北極狐・大雨與龍蝦大餐",
+      "summary": "偶遇北極狐，大雨與龍蝦大餐",
+      "regionIds": ["east", "southeast"],
+      "notes": [],
+      "memories": [
+        {
+          "id": "day-11-memory-01",
+          "title": "在 Mjóeyri 木屋周邊偶遇野生北極狐",
+          "locationName": "早晨",
+          "coordinate": null,
+          "locationStatus": "pending",
+          "story": "早晨：在 Mjóeyri 木屋周邊偶遇野生北極狐，近距離拍照合影。",
+          "remarks": "",
+          "photos": []
+        },
+        {
+          "id": "day-11-memory-02",
+          "title": "都皮沃古爾（Djúpivogur）",
+          "locationName": "都皮沃古爾（Djúpivogur）",
+          "coordinate": null,
+          "locationStatus": "pending",
+          "story": "海邊花崗岩鳥蛋裝置藝術 Eggin í Gleðivík。",
+          "remarks": "",
+          "photos": []
+        },
+        {
+          "id": "day-11-memory-03",
+          "title": "蝙蝠山（Vestrahorn）",
+          "locationName": "蝙蝠山（Vestrahorn）",
+          "coordinate": [-15.0086112, 64.2733333],
+          "locationStatus": "confirmed",
+          "story": "遭遇暴雨，無法進場。",
+          "remarks": "",
+          "photos": [],
+          "coordinateSource": "https://maps.app.goo.gl/CF2dkaPcN7LvcK638"
+        },
+        {
+          "id": "day-11-memory-04",
+          "title": "赫本（Höfn）的 Pakkhús Restaurant",
+          "locationName": "Pakkhús",
+          "coordinate": [-15.2040242, 64.2501616],
+          "locationStatus": "confirmed",
+          "story": "傍晚：赫本（Höfn）的 Pakkhús Restaurant，享用冰島小龍蝦大餐。",
+          "remarks": "",
+          "photos": [],
+          "coordinateSource": "https://www.openstreetmap.org/way/193117971"
+        },
+        {
+          "id": "day-11-memory-05",
+          "title": "Skýjaborg apartments",
+          "locationName": "住宿",
+          "coordinate": null,
+          "locationStatus": "pending",
+          "story": "住宿：Skýjaborg apartments。",
+          "remarks": "",
+          "photos": []
+        },
+        {
+          "id": "day-11-memory-06",
+          "title": "大家聚在一起玩桌遊／派對遊戲",
+          "locationName": "晚上回憶",
+          "coordinate": null,
+          "locationStatus": "pending",
+          "story": "晚上回憶：大家聚在一起玩桌遊／派對遊戲。",
+          "remarks": "",
+          "photos": []
+        }
+      ]
+    },
+    {
+      "id": "day-12",
+      "number": 12,
+      "date": "2026/10/04",
+      "title": "極限 6 小時冰川健行・補考蝙蝠山",
+      "summary": "極限 6 小時冰川健行，補考蝙蝠山",
+      "regionIds": ["southeast"],
+      "notes": [],
+      "memories": [
+        {
+          "id": "day-12-memory-01",
+          "title": "冰川健行",
+          "locationName": "09:30–15:30 冰川健行",
+          "coordinate": null,
+          "locationStatus": "pending",
+          "story": "09:30–15:30，穿冰爪，長達 6 小時深入瓦特納冰原冰舌。",
+          "remarks": "",
+          "photos": []
+        },
+        {
+          "id": "day-12-memory-02",
+          "title": "蝙蝠山（Vestrahorn）補考成功",
+          "locationName": "蝙蝠山（Vestrahorn）",
+          "coordinate": [-15.0086112, 64.2733333],
+          "locationStatus": "confirmed",
+          "story": "健行結束後返回，欣賞黑沙灘與山景。",
+          "remarks": "",
+          "photos": [],
+          "coordinateSource": "https://maps.app.goo.gl/CF2dkaPcN7LvcK638"
+        },
+        {
+          "id": "day-12-memory-03",
+          "title": "Fosshotel Glacier Lagoon",
+          "locationName": "住宿",
+          "coordinate": null,
+          "locationStatus": "pending",
+          "story": "住宿：Fosshotel Glacier Lagoon。",
+          "remarks": "",
+          "photos": []
+        }
+      ]
+    },
+    {
+      "id": "day-13",
+      "number": 13,
+      "date": "2026/10/05",
+      "title": "冰河湖群・羽毛峽谷・飛機殘骸與彩虹瀑布",
+      "summary": "冰河湖群，羽毛峽谷，飛機殘骸與彩虹瀑布",
+      "regionIds": ["southeast", "south"],
+      "notes": [],
+      "memories": [
+        {
+          "id": "day-13-memory-01",
+          "title": "傑古沙龍冰河湖（Jökulsárlón）",
+          "locationName": "傑古沙龍冰河湖（Jökulsárlón）",
+          "coordinate": [-16.2274213, 64.0783208],
+          "locationStatus": "confirmed",
+          "story": "補拍昨日跳過的冰河湖。",
+          "remarks": "",
+          "photos": [],
+          "coordinateSource": "https://www.openstreetmap.org/relation/9044202"
+        },
+        {
+          "id": "day-13-memory-02",
+          "title": "鑽石黑沙灘（Diamond Beach）",
+          "locationName": "鑽石黑沙灘（Diamond Beach）",
+          "coordinate": [-16.178248, 64.0431419],
+          "locationStatus": "confirmed",
+          "story": "早晨前往拍照。",
+          "remarks": "",
+          "photos": [],
+          "coordinateSource": "https://www.openstreetmap.org/node/4381268597"
+        },
+        {
+          "id": "day-13-memory-03",
+          "title": "Fjallsárlón 小冰河湖",
+          "locationName": "Fjallsárlón 小冰河湖",
+          "coordinate": [-16.3977875, 64.0228952],
+          "locationStatus": "confirmed",
+          "story": "欣賞靜謐的小冰河湖。",
+          "remarks": "",
+          "photos": [],
+          "coordinateSource": "https://www.openstreetmap.org/relation/10275914"
+        },
+        {
+          "id": "day-13-memory-04",
+          "title": "羽毛河峽谷（Fjaðrárgljúfur）",
+          "locationName": "羽毛河峽谷（Fjaðrárgljúfur）",
+          "coordinate": [-18.1737214, 63.7725995],
+          "locationStatus": "confirmed",
+          "story": "沿步道健行。",
+          "remarks": "",
+          "photos": [],
+          "coordinateSource": "https://www.openstreetmap.org/node/1784678783"
+        },
+        {
+          "id": "day-13-memory-05",
+          "title": "維克鎮（Vík）",
+          "locationName": "維克鎮（Vík）",
+          "coordinate": null,
+          "locationStatus": "pending",
+          "story": "短暫補給。",
+          "remarks": "",
+          "photos": []
+        },
+        {
+          "id": "day-13-memory-06",
+          "title": "Sólheimasandur 飛機殘骸",
+          "locationName": "Sólheimasandur 飛機殘骸",
+          "coordinate": null,
+          "locationStatus": "pending",
+          "story": "黑沙灘荒漠中的美軍 DC-3 墜機遺址。",
+          "remarks": "",
+          "photos": []
+        },
+        {
+          "id": "day-13-memory-07",
+          "title": "斯科加爾瀑布（Skógafoss，彩虹瀑布）",
+          "locationName": "斯科加爾瀑布（Skógafoss，彩虹瀑布）",
+          "coordinate": [-19.511292, 63.5321038],
+          "locationStatus": "confirmed",
+          "story": "迎著水霧拍照。",
+          "remarks": "",
+          "photos": [],
+          "coordinateSource": "https://www.openstreetmap.org/node/270937065"
+        },
+        {
+          "id": "day-13-memory-08",
+          "title": "The Barn",
+          "locationName": "住宿",
+          "coordinate": null,
+          "locationStatus": "pending",
+          "story": "住宿：The Barn。",
+          "remarks": "",
+          "photos": []
+        }
+      ]
+    },
+    {
+      "id": "day-14",
+      "number": 14,
+      "date": "2026/10/06",
+      "title": "黑沙灘・雙名瀑・西人島火山與小飛機",
+      "summary": "黑沙灘，雙名瀑，西人島火山與小飛機",
+      "regionIds": ["south", "reykjavik"],
+      "notes": [],
+      "memories": [
+        {
+          "id": "day-14-memory-01",
+          "title": "維克黑沙灘（Reynisfjara）",
+          "locationName": "Reynisfjara",
+          "coordinate": [-19.0716193, 63.4057404],
+          "locationStatus": "confirmed",
+          "story": "早晨：維克黑沙灘（Reynisfjara），觀看玄武岩壁與巨浪。",
+          "remarks": "",
+          "photos": [],
+          "coordinateSource": "https://maps.app.goo.gl/CF2dkaPcN7LvcK638"
+        },
+        {
+          "id": "day-14-memory-02",
+          "title": "塞里雅蘭瀑布（Seljalandsfoss）",
+          "locationName": "塞里雅蘭瀑布（Seljalandsfoss）",
+          "coordinate": [-19.9886113, 63.6155997],
+          "locationStatus": "confirmed",
+          "story": "鑽入水簾後方。",
+          "remarks": "",
+          "photos": [],
+          "coordinateSource": "https://maps.app.goo.gl/CF2dkaPcN7LvcK638"
+        },
+        {
+          "id": "day-14-memory-03",
+          "title": "Gljúfrabúi 秘密瀑布",
+          "locationName": "Gljúfrabúi 秘密瀑布",
+          "coordinate": [-19.9864486, 63.6208631],
+          "locationStatus": "confirmed",
+          "story": "探訪隱密岩縫。",
+          "remarks": "",
+          "photos": [],
+          "coordinateSource": "https://maps.app.goo.gl/CF2dkaPcN7LvcK638"
+        },
+        {
+          "id": "day-14-memory-04",
+          "title": "Landeyjahöfn 搭渡輪登島",
+          "locationName": "Landeyjahöfn 搭渡輪登島。",
+          "coordinate": null,
+          "locationStatus": "pending",
+          "story": "Landeyjahöfn 搭渡輪登島。",
+          "remarks": "",
+          "photos": []
+        },
+        {
+          "id": "day-14-memory-05",
+          "title": "登上西人島最高峰",
+          "locationName": "登上原紀錄所稱「西人島最高峰」，俯瞰全島海灣；山名與實際登頂位置待確認。",
+          "coordinate": null,
+          "locationStatus": "pending",
+          "story": "俯瞰全島海灣。",
+          "remarks": "",
+          "photos": []
+        },
+        {
+          "id": "day-14-memory-06",
+          "title": "Eldheimar 火山博物館",
+          "locationName": "Eldheimar 火山博物館",
+          "coordinate": [-20.2602696, 63.4349245],
+          "locationStatus": "confirmed",
+          "story": "觀看 1973 年火山爆發遺跡。",
+          "remarks": "",
+          "photos": [],
+          "coordinateSource": "https://maps.app.goo.gl/CF2dkaPcN7LvcK638"
+        },
+        {
+          "id": "day-14-memory-07",
+          "title": "彩色小鎮與黑木教堂",
+          "locationName": "Stafkirkjan（西人島黑木教堂）",
+          "coordinate": [-20.2613481, 63.4443356],
+          "locationStatus": "confirmed",
+          "story": "彩色小鎮、挪威贈送的古老黑木教堂（Stave Church）。",
+          "remarks": "",
+          "photos": [],
+          "coordinateSource": "https://maps.app.goo.gl/CF2dkaPcN7LvcK638"
+        },
+        {
+          "id": "day-14-memory-08",
+          "title": "港口邊小公園遊玩，搭渡輪返回本島",
+          "locationName": "港口邊小公園遊玩，搭渡輪返回本島。",
+          "coordinate": null,
+          "locationStatus": "pending",
+          "story": "港口邊小公園遊玩，搭渡輪返回本島。",
+          "remarks": "",
+          "photos": []
+        },
+        {
+          "id": "day-14-memory-09",
+          "title": "路邊另一個小飛機殘骸",
+          "locationName": "返程驚喜",
+          "coordinate": null,
+          "locationStatus": "pending",
+          "story": "返程驚喜：路邊另一個小飛機殘骸。",
+          "remarks": "",
+          "photos": []
+        },
+        {
+          "id": "day-14-memory-10",
+          "title": "開回雷克雅維克",
+          "locationName": "住宿",
+          "coordinate": null,
+          "locationStatus": "pending",
+          "story": "住宿：開回雷克雅維克，入住 EIR Apartments。",
+          "remarks": "",
+          "photos": []
+        }
+      ]
+    },
+    {
+      "id": "day-15",
+      "number": 15,
+      "date": "2026/10/07",
+      "title": "藍湖地熱溫泉・市區血拚與奢華大餐",
+      "summary": "藍湖地熱溫泉，市區血拚與奢華大餐",
+      "regionIds": ["reykjavik"],
+      "notes": [],
+      "memories": [
+        {
+          "id": "day-15-memory-01",
+          "title": "藍湖溫泉（Blue Lagoon）",
+          "locationName": "Bláa lónið",
+          "coordinate": [-22.4493538, 63.8800487],
+          "locationStatus": "confirmed",
+          "story": "上午：藍湖溫泉（Blue Lagoon），白矽泥面膜與地熱水療。",
+          "remarks": "",
+          "photos": [],
+          "coordinateSource": "https://www.openstreetmap.org/way/69991144"
+        },
+        {
+          "id": "day-15-memory-02",
+          "title": "雷克雅維克市區逛街、採買紀念品",
+          "locationName": "下午",
+          "coordinate": null,
+          "locationStatus": "pending",
+          "story": "下午：雷克雅維克市區逛街、採買紀念品。",
+          "remarks": "",
+          "photos": []
+        },
+        {
+          "id": "day-15-memory-03",
+          "title": "市區高級晚宴",
+          "locationName": "晚餐",
+          "coordinate": null,
+          "locationStatus": "pending",
+          "story": "晚餐：市區高級晚宴。",
+          "remarks": "",
+          "photos": []
+        },
+        {
+          "id": "day-15-memory-04",
+          "title": "EIR Apartments",
+          "locationName": "住宿",
+          "coordinate": null,
+          "locationStatus": "pending",
+          "story": "住宿：EIR Apartments。",
+          "remarks": "",
+          "photos": []
+        }
+      ]
+    },
+    {
+      "id": "day-16",
+      "number": 16,
+      "date": "2026/10/08",
+      "title": "黃金圈巡禮・溫室番茄與火山熔岩秀",
+      "summary": "黃金圈巡禮，溫室番茄與火山熔岩秀",
+      "regionIds": ["golden", "reykjavik"],
+      "notes": [],
+      "memories": [
+        {
+          "id": "day-16-memory-01",
+          "title": "辛格韋德利國家公園（Thingvellir）",
+          "locationName": "辛格韋德利國家公園（Thingvellir）",
+          "coordinate": [-21.1212537, 64.2590998],
+          "locationStatus": "confirmed",
+          "story": "板塊大裂縫與古議會。",
+          "remarks": "",
+          "photos": [],
+          "coordinateSource": "https://www.openstreetmap.org/node/316032856"
+        },
+        {
+          "id": "day-16-memory-02",
+          "title": "Brúarfoss 藍色秘境瀑布",
+          "locationName": "Brúarfoss 藍色秘境瀑布",
+          "coordinate": [-20.5158725, 64.2642354],
+          "locationStatus": "confirmed",
+          "story": "冰川融雪匯集的湛藍水流。",
+          "remarks": "",
+          "photos": [],
+          "coordinateSource": "https://www.openstreetmap.org/node/415505782"
+        },
+        {
+          "id": "day-16-memory-03",
+          "title": "蓋錫爾間歇泉（Geysir & Strokkur）",
+          "locationName": "蓋錫爾間歇泉（Geysir & Strokkur）",
+          "coordinate": [-20.2995104, 64.3138382],
+          "locationStatus": "confirmed",
+          "story": "觀看地熱噴泉。",
+          "remarks": "",
+          "photos": [],
+          "coordinateSource": "https://www.openstreetmap.org/node/60653536"
+        },
+        {
+          "id": "day-16-memory-04",
+          "title": "古佛斯瀑布（Gullfoss）",
+          "locationName": "古佛斯瀑布（Gullfoss）",
+          "coordinate": [-20.1216821, 64.3266103],
+          "locationStatus": "confirmed",
+          "story": "黃金巨瀑。",
+          "remarks": "",
+          "photos": [],
+          "coordinateSource": "https://www.openstreetmap.org/node/2051929069"
+        },
+        {
+          "id": "day-16-memory-05",
+          "title": "Friðheimar 番茄溫室農場",
+          "locationName": "Friðheimar 番茄溫室農場",
+          "coordinate": [-20.4448425, 64.1772958],
+          "locationStatus": "confirmed",
+          "story": "番茄藤下享用番茄濃湯與麵包。",
+          "remarks": "",
+          "photos": [],
+          "coordinateSource": "https://www.openstreetmap.org/way/436751501"
+        },
+        {
+          "id": "day-16-memory-06",
+          "title": "冰島熔岩秀（Icelandic Lava Show）",
+          "locationName": "Lava Show",
+          "coordinate": [-21.942965, 64.1569946],
+          "locationStatus": "confirmed",
+          "story": "夜晚：回雷克雅維克欣賞冰島熔岩秀（Icelandic Lava Show）。",
+          "remarks": "",
+          "photos": [],
+          "coordinateSource": "https://www.openstreetmap.org/node/10939878230"
+        },
+        {
+          "id": "day-16-memory-07",
+          "title": "回公寓打包、整理行李",
+          "locationName": "夜間",
+          "coordinate": null,
+          "locationStatus": "pending",
+          "story": "夜間：回公寓打包、整理行李。",
+          "remarks": "",
+          "photos": []
+        }
+      ]
+    },
+    {
+      "id": "day-17",
+      "number": 17,
+      "date": "2026/10/09",
+      "title": "公寓浪貓・最後的香水・加油還車與驚魂記",
+      "summary": "公寓浪貓，最後的香水，加油還車與驚魂記",
+      "regionIds": ["reykjavik"],
+      "notes": [],
+      "memories": [
+        {
+          "id": "day-17-memory-01",
+          "title": "住宿門口的小貓跑進屋內作客",
+          "locationName": "早晨",
+          "coordinate": null,
+          "locationStatus": "pending",
+          "story": "早晨：住宿門口的小貓跑進屋內作客。",
+          "remarks": "",
+          "photos": []
+        },
+        {
+          "id": "day-17-memory-02",
+          "title": "市區最後採買",
+          "locationName": "市區最後採買",
+          "coordinate": null,
+          "locationStatus": "pending",
+          "story": "前往專門店替 Becky 買冰島香水。",
+          "remarks": "",
+          "photos": []
+        },
+        {
+          "id": "day-17-memory-03",
+          "title": "最後一次租車加油、機場周邊還車驗車",
+          "locationName": "收官手續",
+          "coordinate": null,
+          "locationStatus": "pending",
+          "story": "收官手續：最後一次租車加油、機場周邊還車驗車。",
+          "remarks": "",
+          "photos": []
+        },
+        {
+          "id": "day-17-memory-04",
+          "title": "前往機場登機返台",
+          "locationName": "航程與返家",
+          "coordinate": null,
+          "locationStatus": "flight",
+          "story": "回程：前往機場登機返台。",
+          "remarks": "",
+          "photos": []
+        },
+        {
+          "id": "day-17-memory-05",
+          "title": "護照事件",
+          "locationName": "航程與返家",
+          "coordinate": null,
+          "locationStatus": "flight",
+          "story": "抵達台灣前一刻，驚覺有人把護照忘在飛機座位上。",
+          "remarks": "",
+          "photos": []
+        }
+      ]
+    },
+    {
+      "id": "day-18",
+      "number": 18,
+      "date": "2026/10/10",
+      "title": "平安返抵台灣",
+      "summary": "平安返抵台灣",
+      "regionIds": [],
+      "notes": [],
+      "memories": [
+        {
+          "id": "day-18-memory-01",
+          "title": "順利找回護照，平安返台，結束 18 天旅程",
+          "locationName": "航程與返家",
+          "coordinate": null,
+          "locationStatus": "flight",
+          "story": "順利找回護照，平安返台，結束 18 天旅程。",
+          "remarks": "",
+          "photos": []
+        }
+      ]
+    }
+  ]
+}

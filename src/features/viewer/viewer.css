@@ -1,0 +1,766 @@
+:root {
+  font-family: 'Noto Sans TC', 'PingFang TC', system-ui, sans-serif;
+  color: #283f33;
+  background: #e5e9df;
+  font-synthesis: none;
+  --paper: #faf8f0;
+  --green: #28513e;
+  --ink: #293e32;
+  --muted: #56664f;
+  --line: #d8decf;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+}
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+button {
+  cursor: pointer;
+  color: inherit;
+}
+button:disabled {
+  opacity: 0.35;
+  cursor: default;
+}
+button:focus-visible,
+a:focus-visible,
+select:focus-visible,
+[tabindex]:focus-visible {
+  outline: 3px solid #a97043;
+  outline-offset: 4px;
+}
+button {
+  touch-action: manipulation;
+}
+.viewer-shell {
+  position: relative;
+  width: 100%;
+  height: 100dvh;
+  min-height: 420px;
+  overflow: hidden;
+}
+.canvas-wrap,
+.journey-canvas {
+  position: absolute;
+  inset: 0;
+}
+.viewer-loading {
+  padding: 80px 30px;
+}
+.viewer-brand {
+  position: absolute;
+  top: 24px;
+  left: 32px;
+}
+.viewer-brand button {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  background: transparent;
+  border: 0;
+  text-align: left;
+  font-size: 12px;
+  color: #314b38;
+}
+.brand-mountain {
+  font-size: 40px;
+  line-height: 1;
+}
+.viewer-brand small {
+  display: block;
+  font-size: 12px;
+  margin-top: 6px;
+}
+.viewer-intro {
+  position: absolute;
+  top: 110px;
+  left: 40px;
+  max-width: 500px;
+  pointer-events: none;
+}
+.viewer-meta {
+  font-size: 12px;
+  line-height: 1.7;
+  color: #56664f;
+}
+.viewer-intro h1 {
+  font-family: Georgia, 'Noto Serif TC', serif;
+  font-weight: 400;
+  font-size: clamp(26px, 2.6vw, 32px);
+  line-height: 1.4;
+  margin: 13px 0;
+  color: #2c4836;
+}
+.viewer-intro > p:not(.viewer-meta) {
+  font-size: 14px;
+  line-height: 1.9;
+  max-width: 380px;
+  color: #56664f;
+}
+.viewer-intro .viewer-status {
+  font-size: 12px !important;
+}
+.viewer-unplaced {
+  pointer-events: auto;
+  min-height: 44px;
+  margin: 2px 0 -8px -8px;
+  padding: 8px;
+  border: 0;
+  border-radius: 5px;
+  background: transparent;
+  color: var(--green);
+  font-size: 14px;
+  font-weight: 600;
+}
+.viewer-unplaced:hover {
+  background: #e8eddf;
+}
+.viewer-primary {
+  pointer-events: auto;
+  background: var(--green);
+  border: 0;
+  color: #fffdf0;
+  padding: 12px 22px;
+  border-radius: 5px;
+  font-size: 14px;
+  margin-top: 12px;
+}
+.route-caption {
+  position: absolute;
+  bottom: 12px;
+  left: 50%;
+  transform: translateX(-50%);
+  white-space: nowrap;
+  font-size: 12px;
+  letter-spacing: 0.06em;
+  color: #56664f;
+}
+.area-pin {
+  border: 1px solid #b2c1ad;
+  background: #faf8f0f2;
+  padding: 9px 13px;
+  border-radius: 6px;
+  font-size: 12px;
+  box-shadow: 0 3px 12px #29453212;
+  white-space: nowrap;
+}
+.area-pin:hover {
+  background: #e8eddf;
+}
+.memory-pin {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  max-width: min(260px, 64vw);
+  min-height: 36px;
+  padding: 4px 10px 4px 5px;
+  border: 1px solid #a5b69b;
+  border-radius: 18px;
+  background: var(--paper);
+  line-height: 1.3;
+  text-align: left;
+}
+.memory-pin:hover,
+.memory-pin:focus-visible {
+  background: var(--green);
+  color: var(--paper);
+  z-index: 3 !important;
+}
+.memory-pin img {
+  flex: none;
+  width: 26px;
+  height: 26px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.memory-pin b {
+  flex: none;
+  min-width: 24px;
+  height: 24px;
+  padding: 0 6px;
+  border-radius: 12px;
+  background: var(--green);
+  color: var(--paper);
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 24px;
+  text-align: center;
+  white-space: nowrap;
+}
+.memory-pin:hover b,
+.memory-pin:focus-visible b {
+  background: var(--paper);
+  color: var(--green);
+}
+.memory-pin-label {
+  overflow: hidden;
+  min-width: 0;
+  font-size: 13px;
+  font-weight: 600;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.area-menu,
+.group-menu {
+  position: absolute;
+  background: #faf8f0f5;
+  border: 1px solid #d6decf;
+  border-radius: 12px;
+  box-shadow: 0 10px 40px #263d3020;
+  overflow: auto;
+  max-height: 65vh;
+  width: 360px;
+  max-width: calc(100vw - 32px);
+  padding: 20px;
+  right: 28px;
+  top: 145px;
+}
+.area-menu {
+  top: 50%;
+  left: 50%;
+  right: auto;
+  transform: translate(-50%, -50%);
+  max-height: 70vh;
+}
+.group-menu {
+  top: 160px;
+}
+.panel-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  margin-bottom: 15px;
+}
+.panel-heading h2 {
+  font-family: Georgia, 'Noto Serif TC', serif;
+  font-size: 20px;
+  font-weight: 400;
+  margin: 3px 0;
+}
+.panel-heading > button {
+  background: transparent;
+  border: 0;
+  font-size: 26px;
+  padding: 4px 8px;
+}
+.area-day {
+  display: grid;
+  text-align: left;
+  gap: 7px;
+  padding: 15px 3px;
+  border: 0;
+  border-top: 1px solid var(--line);
+  background: transparent;
+  width: 100%;
+}
+.area-day small {
+  font-size: 12px;
+  color: var(--muted);
+  letter-spacing: 0.1em;
+}
+.area-day strong {
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 1.6;
+}
+.area-day > span {
+  font-size: 12px;
+  color: #56664f;
+}
+.day-note {
+  font-size: 12px;
+  line-height: 1.8;
+  color: #56664f;
+}
+.group-menu > button {
+  display: block;
+  width: 100%;
+  text-align: left;
+  border: 0;
+  border-top: 1px solid var(--line);
+  background: transparent;
+  padding: 15px 0;
+  font-size: 13px;
+}
+.map-message {
+  position: absolute;
+  bottom: 110px;
+  left: 20px;
+  font-size: 12px;
+  max-width: 300px;
+  background: #faf8efea;
+  padding: 10px 12px;
+  border-radius: 5px;
+}
+.memory-album {
+  width: min(1020px, calc(100vw - 34px));
+  height: min(88dvh, 860px);
+  max-height: calc(100dvh - 32px);
+  padding: 0;
+  border: 1px solid #e0dfd4;
+  border-radius: 14px;
+  background: var(--paper);
+  color: var(--ink);
+  overflow: hidden;
+  box-shadow: 0 20px 100px #1830253d;
+}
+.memory-album::backdrop {
+  background: #233d3266;
+  backdrop-filter: blur(5px);
+}
+.memory-album[open] {
+  display: flex;
+  flex-direction: column;
+}
+.memory-album > header {
+  padding: 22px 28px 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 16px;
+  flex-shrink: 0;
+}
+.memory-album h2 {
+  font-family: Georgia, 'Noto Serif TC', serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 1.4;
+  margin: 7px 0;
+}
+.memory-album header small {
+  font-size: 12px;
+  color: var(--muted);
+}
+.album-close {
+  border: 1px solid var(--line);
+  border-radius: 50%;
+  background: transparent;
+  width: 34px;
+  height: 34px;
+  flex-shrink: 0;
+  font-size: 25px;
+  line-height: 1;
+}
+.album-content {
+  flex: 1;
+  min-height: 0;
+  overflow: auto;
+  scrollbar-gutter: stable;
+  padding: 0 28px 20px;
+}
+.full-story {
+  font-size: 16px;
+  line-height: 1.8;
+  white-space: pre-line;
+  margin: 16px 0;
+  overflow-wrap: anywhere;
+}
+.full-story p {
+  margin: 0 0 12px;
+  max-width: 40em;
+}
+.full-story.is-story-only {
+  font-family: Georgia, 'Noto Serif TC', serif;
+  font-size: clamp(20px, 2.4vw, 26px);
+  line-height: 1.7;
+  margin-top: 8px;
+}
+#album-title:focus {
+  outline: none;
+}
+.traveler-remarks {
+  padding: 15px;
+  background: #e9eddf;
+  border-left: 2px solid #8b9b7a;
+  color: #5b6d53;
+}
+.album-empty {
+  margin: 0 0 16px;
+  font-size: 14px;
+  color: var(--muted);
+}
+.album-footnote {
+  font-size: 12px;
+  line-height: 1.8;
+  color: #56664f;
+  text-align: center;
+}
+.maplibregl-ctrl-attrib {
+  font-size: 12px !important;
+}
+@media (max-width: 767px) {
+  .viewer-brand {
+    top: 18px;
+    left: 16px;
+  }
+  .viewer-brand button {
+    font-size: 12px;
+    gap: 8px;
+  }
+  .brand-mountain {
+    font-size: 32px;
+  }
+  .viewer-brand small {
+    font-size: 12px;
+  }
+  .viewer-intro {
+    top: 88px;
+    left: 22px;
+    max-width: calc(100vw - 44px);
+  }
+  .viewer-intro h1 {
+    font-size: 24px;
+    max-width: 330px;
+    margin: 8px 0;
+    line-height: 1.5;
+  }
+  .viewer-intro > p:not(.viewer-meta) {
+    font-size: 14px;
+    max-width: 270px;
+  }
+  .viewer-intro .viewer-status {
+    display: none;
+  }
+  .route-caption {
+    font-size: 12px;
+    bottom: 14px;
+  }
+  .area-menu {
+    left: 16px;
+    right: 16px;
+    bottom: 110px;
+    top: auto;
+    transform: none;
+    max-height: 65dvh;
+    width: auto;
+  }
+  .group-menu {
+    top: auto;
+    bottom: 110px;
+    left: 16px;
+    right: 16px;
+    width: auto;
+  }
+  .panel-heading h2 {
+    font-size: 17px;
+  }
+  .memory-album > header {
+    padding: 16px 16px 12px;
+    gap: 8px;
+  }
+  .memory-album h2 {
+    font-size: 19px;
+    line-height: 1.5;
+    margin: 5px 0;
+  }
+  .memory-album header small {
+    font-size: 12px;
+  }
+  .memory-album .viewer-meta {
+    font-size: 12px;
+    margin: 0;
+  }
+  .album-content {
+    padding: 0 16px 12px;
+  }
+  .map-message {
+    bottom: 100px;
+    max-width: calc(100vw - 40px);
+    z-index: 0;
+  }
+  .viewer-intro .viewer-primary {
+    padding: 10px 18px;
+    font-size: 14px;
+  }
+  .memory-album {
+    height: calc(100dvh - 32px);
+    max-height: calc(100dvh - 32px);
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  * {
+    scroll-behavior: auto !important;
+    transition: none !important;
+    animation: none !important;
+  }
+}
+/* Keep the map sized after MapLibre's asynchronously loaded CSS sets position:relative. */
+.canvas-wrap .journey-canvas {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  font-family: inherit;
+}
+/* Daily overview and a single collapsible travel-day menu. */
+.day-pin {
+  position: relative;
+  display: grid;
+  gap: 2px;
+  border: 1px solid #a5b69b;
+  background: var(--paper);
+  border-radius: 6px;
+  padding: 7px 10px;
+  min-height: 48px;
+  max-width: 174px;
+  text-align: left;
+  line-height: 1.35;
+}
+.day-pin strong {
+  display: block;
+  font-size: 14px;
+  font-weight: 600;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.day-pin > span {
+  display: block;
+  font-size: 12px;
+  color: var(--muted);
+}
+.pin-place-compact {
+  display: none;
+}
+.day-pin:hover,
+.day-pin:focus-visible {
+  background: var(--green);
+  color: var(--paper);
+  z-index: 3 !important;
+}
+.day-pin-day i {
+  font-style: normal;
+}
+.day-pin:hover > span,
+.day-pin:focus-visible > span {
+  color: var(--paper);
+}
+.album-home {
+  border: 1px solid var(--line);
+  border-radius: 50%;
+  background: transparent;
+  width: 34px;
+  height: 34px;
+  flex-shrink: 0;
+  font-size: 20px;
+  line-height: 1;
+  margin-left: auto;
+}
+.memory-album > header > div:first-child {
+  min-width: 0;
+  flex: 1;
+}
+@media (max-width: 767px) {
+  .viewer-brand button {
+    font-size: 12px;
+  }
+  .viewer-brand small {
+    font-size: 12px;
+  }
+  .day-pin {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    gap: 4px;
+    min-width: 0;
+    min-height: 30px;
+    max-width: 132px;
+    padding: 2px 8px 2px 3px;
+    border-radius: 15px;
+  }
+  .day-pin strong {
+    min-width: 0;
+    font-size: 12px;
+  }
+  .day-pin > .day-pin-day {
+    flex: none;
+    min-width: 22px;
+    height: 22px;
+    border-radius: 11px;
+    background: var(--green);
+    color: var(--paper);
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 22px;
+    text-align: center;
+  }
+  .day-pin-day i {
+    display: none;
+  }
+  .pin-place-full {
+    display: none;
+  }
+  .pin-place-compact {
+    display: inline;
+  }
+  .album-home {
+    width: 31px;
+    height: 31px;
+  }
+  .memory-album > header {
+    gap: 7px;
+  }
+}
+
+/* Readable map chrome: one body scale and a compact secondary scale. */
+.viewer-brand button {
+  letter-spacing: 0;
+}
+.viewer-intro {
+  padding: 14px 18px;
+  background: var(--paper);
+  max-width: 410px;
+}
+.viewer-intro h1 {
+  margin-top: 0;
+}
+.viewer-intro .viewer-meta,
+.viewer-intro .viewer-status {
+  font-size: 12px;
+  color: var(--muted);
+}
+.viewer-intro > p:not(.viewer-meta) {
+  font-size: 14px;
+  line-height: 1.65;
+}
+.album-close,
+.album-home {
+  width: 44px;
+  height: 44px;
+}
+@media (max-width: 767px) {
+  .viewer-brand {
+    left: 16px;
+  }
+  .viewer-brand button {
+    gap: 6px;
+  }
+  .brand-mountain {
+    font-size: 28px;
+  }
+  .viewer-brand small {
+    margin-top: 4px;
+  }
+  .viewer-intro {
+    top: 82px;
+    left: 16px;
+    max-width: calc(100vw - 80px);
+    padding: 12px;
+  }
+  .viewer-intro h1 {
+    font-size: 24px;
+    line-height: 1.35;
+  }
+  .viewer-intro > p {
+    margin: 10px 0;
+  }
+  .viewer-intro .viewer-primary {
+    font-size: 14px;
+    min-height: 44px;
+    margin-top: 0;
+  }
+  .route-caption {
+    bottom: 35px;
+    margin: 0;
+    line-height: 1.4;
+    letter-spacing: 0;
+  }
+  .group-menu {
+    bottom: 126px;
+  }
+  .map-message {
+    bottom: 126px;
+  }
+}
+
+/* Map manipulation stays separate from the journey toolbar. */
+.canvas-wrap .maplibregl-ctrl-bottom-left {
+  left: 24px;
+  bottom: 44px;
+}
+.canvas-wrap .maplibregl-ctrl-bottom-left .maplibregl-ctrl {
+  margin: 0;
+}
+.canvas-wrap .maplibregl-ctrl-group button {
+  width: 44px;
+  height: 44px;
+}
+.album-share {
+  text-align: center;
+  margin: 8px 0;
+}
+.album-share button {
+  border: 0;
+  background: transparent;
+  min-height: 44px;
+  padding: 8px 16px;
+  font-size: 14px;
+}
+.album-share button:hover {
+  background: #e8eddf;
+}
+.album-share p {
+  font-size: 12px;
+  line-height: 1.5;
+  margin: 8px 0;
+}
+@media (max-width: 767px) {
+  .viewer-intro {
+    max-width: calc(100vw - 32px);
+  }
+  .canvas-wrap .maplibregl-ctrl-bottom-left {
+    left: 16px;
+    bottom: 132px;
+  }
+  .map-message {
+    bottom: 244px;
+  }
+}
+
+/* A day without photos gets a frame sized for text; the size is per day so memory navigation never moves. */
+.memory-album.is-text-day {
+  width: min(720px, calc(100vw - 34px));
+  height: min(64dvh, 520px);
+}
+.album-share {
+  text-align: left;
+}
+.album-share button {
+  margin-left: -16px;
+}
+.album-footnote {
+  text-align: left;
+}
+.viewer-intro .viewer-meta {
+  margin-bottom: 0;
+}
+@media (max-width: 767px) {
+  .memory-album.is-text-day {
+    height: min(76dvh, 560px);
+  }
+}
+@media (max-width: 767px) and (max-height: 640px) {
+  .viewer-intro > p:not(.viewer-meta) {
+    display: none;
+  }
+  .memory-album.is-text-day {
+    height: calc(100dvh - 32px);
+  }
+}
+.memory-pin.is-compact .memory-pin-label,
+.memory-pin.is-compact img,
+.day-pin.is-compact strong {
+  display: none;
+}
+.memory-pin.is-compact,
+.day-pin.is-compact {
+  padding: 3px;
+}

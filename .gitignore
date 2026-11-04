@@ -1,0 +1,61 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+node_modules
+.DS_Store
+dist
+dist-ssr
+coverage
+*.local
+.env
+.env.*
+!.env.example
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+*.tsbuildinfo
+
+.eslintcache
+
+# Cypress
+/cypress/videos/
+/cypress/screenshots/
+
+# Vitest
+__screenshots__/
+
+# Vite
+*.timestamp-*-*.mjs
+
+test-results/
+playwright-report/
+
+# Private local photo workspace (never publish or commit)
+.local-memory/
+artifacts/
+
+# Third-party skill; restore from skills-lock.json. The vendored copy carries no licence to redistribute.
+.agents/
+.claude/skills
+
+# Design review evidence: keep notes and scripts, leave screenshots and data snapshots local
+.taste-skill/**/*.png
+.taste-skill/**/*.jpg
+.taste-skill/**/*.json
+
+# Local copies of the data from before the text cleanup
+.scratch/content-cleanup/backup/
