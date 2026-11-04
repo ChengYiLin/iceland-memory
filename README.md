@@ -14,7 +14,7 @@
 
 ## 本機啟動
 
-使用 `.nvmrc` 的 Node 22.23.2，或符合 `package.json` engines 的版本。
+使用 `.nvmrc` 的 Node 26 LTS（可執行 `nvm use`）。
 
 ```sh
 nvm use
