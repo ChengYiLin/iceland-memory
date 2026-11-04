@@ -12,10 +12,16 @@ export default defineConfig({
   retries: process.env.CI ? 1 : 0,
   workers: 1,
   reporter: 'html',
-  use: { baseURL: 'http://127.0.0.1:5173', trace: 'on-first-retry', headless: true },
+  use: {
+    baseURL: 'http://127.0.0.1:5173',
+    trace: 'on-first-retry',
+    headless: true,
+    launchOptions: { args: ['--enable-unsafe-swiftshader'] },
+  },
+  // System Chrome, so running the tests needs no separate browser download.
   projects: [
-    { name: 'chromium', use: { ...devices['Desktop Chrome'] } },
-    { name: 'mobile-chromium', use: { ...devices['Pixel 5'] } },
+    { name: 'chromium', use: { ...devices['Desktop Chrome'], channel: 'chrome' } },
+    { name: 'mobile-chromium', use: { ...devices['Pixel 5'], channel: 'chrome' } },
   ],
   webServer: {
     command: 'node scripts/editor.mjs',
